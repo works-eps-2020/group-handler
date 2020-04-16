@@ -1,0 +1,38 @@
+{
+  "name": "group-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "dev": "nodemon --watch ./src --exec ts-node -r dotenv/config ./src/app.ts",
+    "build": "tsc",
+    "prettier": "prettier .drone.yml  src/{**/,}*.{ts,json}",
+    "format:check": "npm run prettier -- --list-different",
+    "format:fix": "npm run prettier -- --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/works-eps-2020/group-handler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/works-eps-2020/group-handler/issues"
+  },
+  "homepage": "https://github.com/works-eps-2020/group-handler#readme",
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.6",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "fastify": "^2.13.1",
+    "node-fetch": "^2.6.0",
+    "pino-pretty": "^4.0.0"
+  }
+}
