@@ -18,7 +18,7 @@ steps:
       email: kedthunder@gmail.com
       dockerfile: ./Dockerfile
       registry: docker.pkg.github.com
-      repo: ked57/works-eps-2020/group-handler
+      repo: works-eps-2020/group-handler
       username:
         from_secret: GITHUB_USERNAME
       password:
