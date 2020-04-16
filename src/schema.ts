@@ -9,7 +9,7 @@ export type RuleContext = {
     idToken?: { [key: string]: any };
     clientName?: string;
     clientID?: string;
-  }
+  };
 };
 
 export const RULE_CONTEXT_SCHEMA = {
@@ -18,25 +18,25 @@ export const RULE_CONTEXT_SCHEMA = {
     user: {
       type: "object",
       properties: { email: { type: "string" } },
-      additionalProperties: true
+      additionalProperties: true,
     },
     context: {
       type: "object",
       properties: {
         accessToken: {
           type: "object",
-          additionalProperties: true
+          additionalProperties: true,
         },
         idToken: {
           type: "object",
-          additionalProperties: true
+          additionalProperties: true,
         },
         clientName: { type: "string" },
-        clientID: { type: "string" }
+        clientID: { type: "string" },
       },
-      additionalProperties: false
-    }
+      additionalProperties: false,
+    },
   },
   required: ["user", "context"],
-  additionalProperties: false
+  additionalProperties: false,
 };

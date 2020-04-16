@@ -7,7 +7,7 @@
     "start": "node ./dist/app.js",
     "dev": "nodemon --watch ./src --exec ts-node -r dotenv/config ./src/app.ts",
     "build": "tsc",
-    "prettier": "prettier .drone.yml  src/{**/,}*.{ts,json}",
+    "prettier": "prettier .drone.yml  src/{**/,}*.ts",
     "format:check": "npm run prettier -- --list-different",
     "format:fix": "npm run prettier -- --write"
   },
