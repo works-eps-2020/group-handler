@@ -11,7 +11,7 @@ if (!HASURA_ADMIN_SECRET) {
 }
 
 const QUERY_USER_ROLES = `query ($auth0_id: String) {
-    user_role(where: {user: {auth0_id: {_eq: $auth0_id}}}) {
+    user_role(where: {user: {id: {_eq: $auth0_id}}}) {
       role {
         name
       }
