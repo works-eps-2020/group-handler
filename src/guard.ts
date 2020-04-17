@@ -33,8 +33,8 @@ export const applyRule: Rule = async ({ user, context }) => {
     user,
     context: {
       ...context,
-      accessToken: {
-        ...context.accessToken,
+      idToken: {
+        ...context.idToken,
         "https://hasura.io/jwt/claims": {
           "x-hasura-default-role": "public",
           "x-hasura-allowed-roles": ["public", ...(roles || [])],
