@@ -23,8 +23,6 @@ export const applyRule: Rule = async ({ user, context }) => {
   if (!context.idToken) {
     throw new Error("missing property: context.idToken");
   }
-  console.log("user", user);
-  console.log("context", context);
   if (!user.user_id) {
     throw new Error("missing property: user.user_id");
   }

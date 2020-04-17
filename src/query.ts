@@ -28,7 +28,7 @@ const fetcher = async (
 ) => {
   const response = await fetch(url, {
     headers: {
-      "x-hasura-admin-seret": `${HASURA_ADMIN_SECRET}`,
+      "x-hasura-admin-secret": `${HASURA_ADMIN_SECRET}`,
     },
     method: "POST",
     body: JSON.stringify({
